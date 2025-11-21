@@ -1,0 +1,129 @@
+/*AVISO: Projeto feito exclusivamente para tela de celulares*/
+
+@charset "UTF-8";
+@font-face {
+    font-family: "Comic Relief";
+    src: url(fonts/ComicRelief-Bold.ttf);
+}
+
+:root {
+    --fontePadrao: "Comic Relief"
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fontePadrao);
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+header {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+header > h1 {
+    margin-bottom: 5px;
+}
+
+
+main {
+    background-color: lightcyan;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    line-height: 2em;
+    padding: 30px;
+    font-size: 1.3em;
+    align-items: center;
+    justify-content: center;
+}
+
+
+section.normal {
+    background-color: lightcyan;
+    color: black;
+}
+
+
+section.normal > div > p {
+    text-align: center;
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.733);
+    color: white;
+    box-shadow: inset 6px 6px 10px rgba(0, 0, 0, 0.452);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+section.imagem > div {
+    display: inline-block; 
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.564);
+    text-shadow: 1px 1px 0px black;
+    padding: 30px;
+    border-radius: 16px;
+}
+
+section.fotos {
+    background-color: rgba(0, 0, 0, 0.733);
+    color: white;
+    box-shadow: inset 6px 6px 10px rgba(0, 0, 0, 0.452);
+    background-size: auto;
+    background-repeat: no-repeat;
+    
+    
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+section.fotos > div {
+    display: inline-block; 
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.564);
+    text-shadow: 1px 1px 0px black;
+    padding: 30px;
+    border-radius: 16px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#img01 {
+    background-image: url('images/foto01.jpg');
+    background-position: center center;
+}
+
+#img02 {
+    background-image: url('images/foto02.jpg');
+    background-position: center center;
+}
+
+#img03 {
+    background-image: url('images/conjunto.png');
+}
