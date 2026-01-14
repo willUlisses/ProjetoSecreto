@@ -85,6 +85,7 @@ main > div > article {
     text-align: center;
     text-decoration: underline white 3px;
     text-underline-offset: 7px;
+
     line-height: 2;
 }
 
